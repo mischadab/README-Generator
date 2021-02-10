@@ -40,7 +40,7 @@ const questions = [
     {
         type: 'input',
         name: 'test',
-        message: 'How do you un tests for this repository?',
+        message: 'How do you run tests for this repository?',
         default: "npm test"
     },
     {
@@ -74,7 +74,7 @@ function init() {
     // collect answers
     .then((answers) => {
         // push answers into
-        writeToFile("README.md", generateMarkdown(answers))
+        writeToFile("README.mdv", generateMarkdown(answers))
     }
     )
 }
