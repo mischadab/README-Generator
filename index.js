@@ -74,7 +74,7 @@ function init() {
     // collect answers
     .then((answers) => {
         // push answers into
-        writeToFile("README.md", generateMarkdown(answers))
+        writeToFile("READMEE.md", generateMarkdown(answers))
     }
     )
 }
