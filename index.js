@@ -2,7 +2,7 @@
 var inquirer = require('inquirer');
 var fs = require('fs');
 var path = require('path');
-var generateMarkdown = require('./utils/generateMarkdown')
+var generateMarkdown = require('./utils/generateMarkdown.js')
 
 // TODO: Create an array of questions for user input
 const questions = [
@@ -74,10 +74,11 @@ function init() {
     // collect answers
     .then((answers) => {
         // push answers into
-        writeToFile("README.mdv", generateMarkdown(answers))
+        writeToFile("README.md", generateMarkdown(answers))
     }
     )
 }
 
 // Function call to initialize app
 init();
+
