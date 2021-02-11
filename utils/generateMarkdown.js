@@ -46,7 +46,7 @@ function generateMarkdown(answer) {
 
 
   ## Description
-  ${answer.descrption}
+  ${answer.description}
   
 
   ## Installation
